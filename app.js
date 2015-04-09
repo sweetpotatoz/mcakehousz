@@ -11,11 +11,14 @@ var service = require('./routes/service');
 var gallery = require('./routes/gallery');
 var contact = require('./routes/contact');
 
+var hbs = require('hbs');
+
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+hbs.registerPartials(__dirname + '/views/partials');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
