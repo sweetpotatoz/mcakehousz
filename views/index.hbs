@@ -1,5 +1,14 @@
 {{> header}}
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!-- Menu Horizontal -->
 <ul class="menu">
     <li class="current"><a href="">Home</a></li>
@@ -10,8 +19,16 @@
 </ul>
 
 <div class="headline col_12">
-    <h3>Two columns one for Facebook and another for Twiter</h1>
-    <p>Place holder for feeds from Facebook and Twitter update</p>
+    <div class="col_8">
+      <div class="fb-page" data-href="https://www.facebook.com/pokernewsdotcom" data-width="500" data-height="380" data-hide-cover="true" data-show-facepile="false" data-show-posts="true">
+        <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pokernewsdotcom">
+          <a href="https://www.facebook.com/pokernewsdotcom">MCakehousz</a></blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="col_4">
+      <a class="twitter-timeline" href="https://twitter.com/jleonyeoh" data-widget-id="588000005815934976">Tweets by @MCakeHousz</a>
+    </div>
 </div><!-- END SECONDARY HEADLINE -->
 
 <div class="col_8">
@@ -30,4 +47,8 @@
 </div><!-- END SLIDESHOW PARAGRAPH -->
 
 <div class="clear"></div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
+
 {{> footer}}
