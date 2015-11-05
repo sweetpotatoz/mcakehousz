@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var about = require('./routes/about');
+var term = require('./routes/term');
 var update = require('./routes/update');
 var gallery = require('./routes/gallery');
 var contact = require('./routes/contact');
@@ -29,7 +29,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/about', about);
+app.use('/term', term);
 app.use('/update', update);
 app.use('/gallery', gallery);
 app.use('/contact', contact);
