@@ -9,12 +9,29 @@ a {
 
 .headline h1 {
   margin-bottom: 0;
+  color: #FFBF00;
 }
 
 .headline p {
   margin-top: 0;
 }
 
-.footer {
+#footer {
   color: #000EEE;
 }
+
+/*---------------------------------
+	Introduction in index
+-----------------------------------*/
+
+#intro {
+  color: #0B0B61;
+}
+
+p#pheader {
+  color: #DF7401;
+}
+
+/*---------------------------------
+	List in Terms Page
+-----------------------------------*/
